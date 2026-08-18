@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Arshad — Creative Developer</title>
+<meta name="description" content="Noa Reyes — Creative Developer crafting cinematic, interactive web experiences.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor">
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing">
+    <span class="cursor-label" id="cursorLabel"></span>
+  </div>
+</div>
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader">
+  <div class="loader-top">
+    <span class="loader-mark">N&thinsp;R</span>
+    <span class="loader-tag">CREATIVE&nbsp;DEV</span>
+  </div>
+  <div class="loader-center">
+    <div class="loader-count" id="loaderCount">0</div>
+  </div>
+  <div class="loader-bar-wrap">
+    <div class="loader-bar" id="loaderBar"></div>
+  </div>
+  <div class="loader-bottom">
+    <span>BUILDING&nbsp;INTERFACE</span>
+    <span>2026 EDITION</span>
+  </div>
+</div>
+
+<!-- ============ GRAIN OVERLAY ============ -->
+<div class="grain"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark" data-cursor="link">Muhammad Arshad</a>
+    <nav class="nav-links">
+      <a href="#work" data-cursor="link"><span>01</span> Work</a>
+      <a href="#services" data-cursor="link"><span>02</span> Services</a>
+      <a href="#about" data-cursor="link"><span>03</span> About</a>
+      <a href="#contact" data-cursor="link"><span>04</span> Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta magnetic" data-cursor="link">
+      <span>Start a project</span>
+    </a>
+    <button class="nav-burger" id="navBurger" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#work">Work</a>
+  <a href="#services">Services</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-noise-shape" id="heroShape"></div>
+
+    <div class="hero-inner">
+      <p class="eyebrow reveal-line"><span>PORTFOLIO — EDITION 04 / 2026</span></p>
+
+      <h1 class="hero-title">
+        <div class="split-line"><span class="split-mask"><span class="split-inner">Interfaces that</span></span></div>
+        <div class="split-line"><span class="split-mask"><span class="split-inner"><em>move</em> like film.</span></span></div>
+      </h1>
+
+      <div class="hero-sub-row">
+        <p class="hero-sub reveal-line">
+          <span>I'm Noa Reyes, a creative developer who builds cinematic, motion-driven
+          digital products for brands that refuse to sit still.</span>
+        </p>
+        <div class="hero-cta-group">
+          <a href="#work" class="btn btn-primary magnetic" data-cursor="link">
+            <span class="btn-label">View the work</span>
+            <span class="btn-icon">↗</span>
+          </a>
+          <a href="#contact" class="btn btn-ghost magnetic" data-cursor="link">
+            <span class="btn-label">Say hello</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-float hero-float-1" data-float></div>
+    <div class="hero-float hero-float-2" data-float></div>
+    <div class="hero-float hero-float-3" data-float></div>
+
+    <div class="scroll-cue">
+      <span class="scroll-cue-line"></span>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE 1 ============ -->
+  <section class="marquee-section">
+    <div class="marquee" id="marquee1">
+      <div class="marquee-track">
+        <span>Design</span><span class="dot">✦</span>
+        <span>Develop</span><span class="dot">✦</span>
+        <span>Animate</span><span class="dot">✦</span>
+        <span>Deploy</span><span class="dot">✦</span>
+        <span>Repeat</span><span class="dot">✦</span>
+      </div>
+      <div class="marquee-track" aria-hidden="true">
+        <span>Design</span><span class="dot">✦</span>
+        <span>Develop</span><span class="dot">✦</span>
+        <span>Animate</span><span class="dot">✦</span>
+        <span>Deploy</span><span class="dot">✦</span>
+        <span>Repeat</span><span class="dot">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="section-head">
+      <p class="eyebrow"><span class="eyebrow-num">01</span> About</p>
+    </div>
+
+    <div class="about-inner">
+      <p class="about-text" id="aboutText">
+        For nine years I've lived at the seam between design and code —
+        translating brand ambition into interfaces that feel considered,
+        tactile, and alive. Every project starts with a question: what should
+        this feel like to touch? The answer shapes the motion, the type, the
+        rhythm of the scroll.
+      </p>
+
+      <div class="about-stats">
+        <div class="stat" data-stagger>
+          <div class="stat-num" data-count="9">0</div>
+          <div class="stat-label">Years in craft</div>
+        </div>
+        <div class="stat" data-stagger>
+          <div class="stat-num" data-count="63">0</div>
+          <div class="stat-label">Projects shipped</div>
+        </div>
+        <div class="stat" data-stagger>
+          <div class="stat-num" data-count="18">0</div>
+          <div class="stat-label">Awards &amp; nods</div>
+        </div>
+        <div class="stat" data-stagger>
+          <div class="stat-num" data-count="12">0</div>
+          <div class="stat-label">Countries worked with</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="section-head">
+      <p class="eyebrow"><span class="eyebrow-num">02</span> Services</p>
+      <h2 class="section-title reveal-line"><span>What I bring to the table</span></h2>
+    </div>
+
+    <div class="service-list">
+      <article class="service-card" data-cursor="view">
+        <div class="service-top">
+          <span class="service-index">01</span>
+          <span class="service-arrow">↗</span>
+        </div>
+        <h3 class="service-title">Web Design</h3>
+        <p class="service-desc">Art-directed interfaces built from real typographic and layout
+          decisions — never a template with a new logo dropped in.</p>
+        <div class="service-tags">
+          <span>UI Systems</span><span>Layout</span><span>Typography</span>
+        </div>
+      </article>
+
+      <article class="service-card" data-cursor="view">
+        <div class="service-top">
+          <span class="service-index">02</span>
+          <span class="service-arrow">↗</span>
+        </div>
+        <h3 class="service-title">Motion Design</h3>
+        <p class="service-desc">Scroll narratives, micro-interactions and page transitions
+          choreographed frame by frame with GSAP.</p>
+        <div class="service-tags">
+          <span>GSAP</span><span>ScrollTrigger</span><span>Choreography</span>
+        </div>
+      </article>
+
+      <article class="service-card" data-cursor="view">
+        <div class="service-top">
+          <span class="service-index">03</span>
+          <span class="service-arrow">↗</span>
+        </div>
+        <h3 class="service-title">Front-End Build</h3>
+        <p class="service-desc">Pixel-true, performant code — semantic markup, clean
+          architecture, animation that never costs you a frame.</p>
+        <div class="service-tags">
+          <span>HTML/CSS</span><span>Performance</span><span>Accessibility</span>
+        </div>
+      </article>
+
+      <article class="service-card" data-cursor="view">
+        <div class="service-top">
+          <span class="service-index">04</span>
+          <span class="service-arrow">↗</span>
+        </div>
+        <h3 class="service-title">Brand Systems</h3>
+        <p class="service-desc">Design tokens, component libraries and motion guidelines
+          that keep a brand consistent as it scales.</p>
+        <div class="service-tags">
+          <span>Design Tokens</span><span>Docs</span><span>Handoff</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="work" id="work">
+    <div class="section-head">
+      <p class="eyebrow"><span class="eyebrow-num">03</span> Selected Work</p>
+      <h2 class="section-title reveal-line"><span>Recent projects worth a closer look</span></h2>
+    </div>
+
+    <div class="project-list">
+
+      <article class="project-card" data-cursor="view">
+        <div class="project-media">
+          <img data-parallax-img src="https://picsum.photos/id/1015/1200/1400" alt="Fjord Studio project visual">
+          <div class="project-media-overlay"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-info-top">
+            <h3 class="project-title">Fjord Studio</h3>
+            <span class="project-year">2026</span>
+          </div>
+          <p class="project-desc">A scroll-driven brand site for a Nordic architecture studio, built
+            around slow parallax and full-bleed photography.</p>
+          <div class="project-tags"><span>Web Design</span><span>GSAP</span><span>Branding</span></div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cursor="view">
+        <div class="project-media">
+          <img data-parallax-img src="https://picsum.photos/id/1039/1200/1400" alt="Halcyon Records project visual">
+          <div class="project-media-overlay"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-info-top">
+            <h3 class="project-title">Halcyon Records</h3>
+            <span class="project-year">2025</span>
+          </div>
+          <p class="project-desc">An interactive label site with audio-reactive motion and a
+            kinetic type system built for release drops.</p>
+          <div class="project-tags"><span>Interactive</span><span>Motion</span><span>Audio UI</span></div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cursor="view">
+        <div class="project-media">
+          <img data-parallax-img src="https://picsum.photos/id/1025/1200/1400" alt="Museum of Motion project visual">
+          <div class="project-media-overlay"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-info-top">
+            <h3 class="project-title">Museum of Motion</h3>
+            <span class="project-year">2025</span>
+          </div>
+          <p class="project-desc">A digital exhibition experience translating physical
+            choreography into scroll-based storytelling.</p>
+          <div class="project-tags"><span>Storytelling</span><span>3D</span><span>ScrollTrigger</span></div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cursor="view">
+        <div class="project-media">
+          <img data-parallax-img src="https://picsum.photos/id/1005/1200/1400" alt="Ember Atelier project visual">
+          <div class="project-media-overlay"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-info-top">
+            <h3 class="project-title">Ember Atelier</h3>
+            <span class="project-year">2024</span>
+          </div>
+          <p class="project-desc">A slow-fashion e-commerce build with tactile product reveals
+            and a considered checkout flow.</p>
+          <div class="project-tags"><span>E-commerce</span><span>UX</span><span>Design System</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE 2 ============ -->
+  <section class="marquee-section marquee-section-alt">
+    <div class="marquee" id="marquee2">
+      <div class="marquee-track marquee-track-reverse">
+        <span>Fjord Studio</span><span class="dot">·</span>
+        <span>Halcyon Records</span><span class="dot">·</span>
+        <span>Museum of Motion</span><span class="dot">·</span>
+        <span>Ember Atelier</span><span class="dot">·</span>
+        <span>North&nbsp;&amp;&nbsp;Rye</span><span class="dot">·</span>
+      </div>
+      <div class="marquee-track marquee-track-reverse" aria-hidden="true">
+        <span>Fjord Studio</span><span class="dot">·</span>
+        <span>Halcyon Records</span><span class="dot">·</span>
+        <span>Museum of Motion</span><span class="dot">·</span>
+        <span>Ember Atelier</span><span class="dot">·</span>
+        <span>North&nbsp;&amp;&nbsp;Rye</span><span class="dot">·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="contact-bg" data-parallax-bg></div>
+    <div class="section-head">
+      <p class="eyebrow"><span class="eyebrow-num">04</span> Contact</p>
+    </div>
+
+    <div class="contact-inner">
+      <h2 class="contact-title reveal-line">
+        <span>Have a project in mind?<br>Let's make it move.</span>
+      </h2>
+
+      <a href="mailto:hello@noareyes.design" class="contact-email magnetic" data-cursor="link">
+        <span>hello@noareyes.design</span>
+      </a>
+
+      <div class="contact-row">
+        <div class="contact-socials">
+          <a href="#" class="magnetic" data-cursor="link">Instagram</a>
+          <a href="#" class="magnetic" data-cursor="link">LinkedIn</a>
+          <a href="#" class="magnetic" data-cursor="link">Twitter / X</a>
+          <a href="#" class="magnetic" data-cursor="link">Dribbble</a>
+        </div>
+        <div class="contact-loc">
+          <span>Based in Lisbon, PT</span>
+          <span id="localTime">Local time —</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© 2026 Noa Reyes. All rights reserved.</span>
+    <a href="#top" class="footer-top magnetic" data-cursor="link">Back to top ↑</a>
+  </div>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
